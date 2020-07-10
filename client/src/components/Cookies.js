@@ -159,7 +159,7 @@ export default function CookiesStatement() {
                 </button>
             </Buttons>
             <ReadMore>
-                <Link to="./cookies">Read more about cookies</Link>
+                <Link to="./legal">Read more about cookies</Link>
             </ReadMore>
         </Cookies>
     );
