@@ -18,7 +18,7 @@ export default function Legal() {
 
                 <p>
                     At michalantczak.com, accessible from
-                    https:www.michalantczak.com, https://michalantczak.com,
+                    https://www.michalantczak.com, https://michalantczak.com,
                     and/or https://blog.michalantczak.com (old, but still
                     exisiting), one of our main priorities is the privacy of our
                     visitors. This Privacy Policy document contains types of
@@ -76,9 +76,9 @@ export default function Legal() {
                 </p>
 
                 <ul>
-                    <li>Provide, operate, and maintain our webste</li>
-                    <li>Improve, personalize, and expand our webste</li>
-                    <li>Understand and analyze how you use our webste</li>
+                    <li>Provide, operate, and maintain our website</li>
+                    <li>Improve, personalize, and expand our website</li>
+                    <li>Understand and analyze how you use our website</li>
                     <li>
                         Develop new products, services, features, and
                         functionality
@@ -275,11 +275,18 @@ export default function Legal() {
 }
 const Container = styled.section`
     margin: 10rem 0rem;
+    padding: 2rem;
 `;
 const Main = styled.section`
     * {
         ${fonts.cormorant};
+        font-size: 2rem;
         color: ${colors.font};
+    }
+    h1 {
+        font-family: ${fonts.rajdhani};
+        font-size: 3rem;
+        color: ${colors.primary};
     }
     h2 {
         font-family: ${fonts.rajdhani};

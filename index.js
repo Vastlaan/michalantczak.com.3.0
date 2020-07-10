@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.post("/api/submitContactForm", (req, res) => {
     const { name, email, message } = req.body;
     const msg = {
-        to: email,
+        to: [email, "info@michalantczak.com"],
         from: "no-reply@michalantczak.com",
         subject: "Contact form submission",
         html: `
