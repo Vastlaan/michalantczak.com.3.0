@@ -1,7 +1,7 @@
 {
-    "name": "it-context",
+    "name": "michal-antczak",
     "version": "1.0.0",
-    "description": "IT Context official website",
+    "description": "Michal Antczak official website",
     "main": "index.js",
     "scripts": {
         "server": "nodemon index.js",
