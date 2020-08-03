@@ -42,7 +42,7 @@ export default function LangSwitcher() {
     );
 }
 const Container = styled.div`
-    margin-right: 2rem;
+    margin-right: 1rem;
     ${() => respond("m", "margin-right:5rem;")}
 
     display: flex;

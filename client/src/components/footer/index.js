@@ -43,7 +43,7 @@ export default function Footer() {
                 <Company>
                     <div>Oostervenne 397</div>
                     <div>1444XN Purmerend</div>
-                    <a href="tel:00310682307051">
+                    <a href="tel:0031682307051">
                         <RiPhoneLine style={{ color: "lime" }} /> 06 82 30 70 51
                     </a>
                     <a href="mailto:info@michalantczak.com">

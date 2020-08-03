@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import gsap, { Back } from "gsap";
-import { colors, fonts } from "../../styles";
+import { colors, fonts, respond } from "../../styles";
 import { ReactComponent as LogoSvg } from "../../logo.svg";
 
 export default function Logo() {
@@ -80,12 +80,12 @@ export default function Logo() {
 }
 
 const Name = styled.h1`
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     color: ${colors.secondary};
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-family: ${fonts.rokkitt};
-
+    ${() => respond("s", "font-size: 4rem; margin-left: 2rem;")}
     span {
         display: inline-block;
     }

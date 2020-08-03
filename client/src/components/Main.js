@@ -13,6 +13,7 @@ import Webshops from "./webshops";
 import Projects from "./projects";
 import Contact from "./contact";
 import Legal from "./legal";
+import WhatsApp from "./whatsApp";
 import Error from "./Error";
 import ScrollToTop from "./ScrollToTop";
 import { respond, colors, fonts } from "../styles";

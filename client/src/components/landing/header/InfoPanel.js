@@ -11,6 +11,7 @@ import {
     ButtonPrimary,
     ButtonPrimaryReverse,
 } from "../../../styles";
+import { RiMailLine, RiWhatsappLine, RiPhoneLine } from "react-icons/ri";
 
 export default function InfoPanel() {
     const info = useRef();
@@ -35,7 +36,7 @@ export default function InfoPanel() {
     return (
         <Container ref={info}>
             <Info>
-                <div>
+                <Main>
                     <p>
                         {intl.formatMessage({
                             id: "landingInfoWebsitesText",
@@ -48,7 +49,31 @@ export default function InfoPanel() {
                             })}
                         </ButtonPrimary>
                     </Link>
-                </div>
+                    <Icons>
+                        <a
+                            href="tel:0031682307051"
+                            style={{ color: "#0b4f6c" }}
+                        >
+                            <RiPhoneLine />
+                            <span>
+                                {intl.formatMessage({
+                                    id: "landingInfoCall",
+                                })}
+                            </span>
+                        </a>
+                        <a
+                            href="mailto:info@michalantczak.com"
+                            style={{ color: "#590004" }}
+                        >
+                            <RiMailLine />
+                            <span>Mail me</span>
+                        </a>{" "}
+                        <a href="https://wa.me/31682307051?text=Hoi%21%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20samenwerking%20met%20jou%21%0ANeem%20alsjeblieft%20een%20contact%20met%20mij%20op.%20Groeten%21">
+                            <RiWhatsappLine />
+                            <span>WhatsApp</span>
+                        </a>{" "}
+                    </Icons>
+                </Main>
             </Info>
         </Container>
     );
@@ -66,21 +91,50 @@ const Container = styled.div`
 
 const Info = styled.div`
     display: flex;
+`;
 
-    div {
-        flex: 1;
+const Main = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        font-family: ${fonts.rokkitt};
+        font-size: 2rem;
+        color: ${colors.font};
+    }
+
+    button {
+        margin: 5rem 0;
+    }
+`;
+const Icons = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        margin-right: 2rem;
+        text-decoration: none;
+        color: ${colors.secondary};
 
-        p {
-            font-family: ${fonts.rokkitt};
+        span {
             font-size: 2rem;
-            color: ${colors.font};
+            color: inherit;
+        }
+        font-size: 5rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
         }
 
-        button {
-            margin: 5rem 0;
-        }
+        ${() => respond("m", "margin-right: 4rem;")}
     }
 `;
