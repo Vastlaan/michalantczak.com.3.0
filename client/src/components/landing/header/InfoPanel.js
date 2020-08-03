@@ -119,7 +119,7 @@ const Icons = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 2rem;
+        margin-right: 4rem;
         text-decoration: none;
         color: ${colors.secondary};
 
@@ -135,6 +135,6 @@ const Icons = styled.div`
             transform: scale(1.1);
         }
 
-        ${() => respond("m", "margin-right: 4rem;")}
+        ${() => respond("m", "margin-right: 5rem;")}
     }
 `;
