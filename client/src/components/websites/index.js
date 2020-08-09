@@ -29,7 +29,7 @@ export default function Main() {
                 text={intl.formatMessage({ id: "websitesIntersection1Text" })}
                 forceMarginTop={true}
             />
-            <Packages />
+            {/* <Packages /> */}
             <Slogan
                 text1={intl.formatMessage({ id: "websitesSlogan1" })}
                 text2={intl.formatMessage({ id: "websitesSlogan2" })}
