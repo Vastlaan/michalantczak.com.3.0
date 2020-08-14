@@ -21,7 +21,7 @@ export default function Landing() {
                 main={intl.formatMessage({ id: "landingIntersection1Main" })}
                 text={intl.formatMessage({ id: "landingIntersection1Text" })}
             >
-                <Link to="/projects">
+                <Link to="/technologies">
                     <ButtonPrimary>
                         {intl.formatMessage({
                             id: "landingIntersection1Button",

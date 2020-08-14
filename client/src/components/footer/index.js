@@ -1,8 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { colors, fonts, respond } from "../../styles";
 import {
     RiLinkedinBoxLine,
@@ -16,23 +14,6 @@ import { ReactComponent as Logo } from "../../logo.svg";
 export default function Footer() {
     const footer = useRef();
     const intl = useIntl();
-
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const tl = gsap.timeline({
-            paused: true,
-            scrollTrigger: {
-                trigger: footer.current,
-                toggleActions: "restart none restart none",
-            },
-        });
-        tl.fromTo(
-            footer.current,
-            0.6,
-            { y: 100, opacity: 0 },
-            { y: 0, opacity: 1 }
-        );
-    }, []);
 
     return (
         <Container ref={footer}>
@@ -55,10 +36,10 @@ export default function Footer() {
                     <Link to="/projects">
                         {intl.formatMessage({ id: "footerLinksProjects" })}
                     </Link>
-                    <Link to="/websites">
-                        {intl.formatMessage({ id: "footerLinksWebsites" })}
+                    <Link to="/certificates">
+                        {intl.formatMessage({ id: "footerLinksCertificates" })}
                     </Link>
-                    <Link to="/webshops">
+                    <Link to="/technologies">
                         {intl.formatMessage({ id: "footerLinksMarketing" })}
                     </Link>
                 </Links>

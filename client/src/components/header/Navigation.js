@@ -19,7 +19,7 @@ export default function Navigation({ isOpen, setIsOpen }) {
                     {intl.formatMessage({ id: "navigationHome" })}
                 </Link>
                 <Link
-                    to="/websites"
+                    to="/technologies"
                     onClick={() =>
                         window.innerWidth < 780 ? setIsOpen(false) : null
                     }
@@ -27,7 +27,7 @@ export default function Navigation({ isOpen, setIsOpen }) {
                     {intl.formatMessage({ id: "navigationWebsites" })}
                 </Link>
                 <Link
-                    to="/webshops"
+                    to="/certificates"
                     onClick={() =>
                         window.innerWidth < 780 ? setIsOpen(false) : null
                     }

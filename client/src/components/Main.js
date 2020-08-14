@@ -8,8 +8,8 @@ import SEO from "./SEO";
 import Header from "./header";
 import Footer from "./footer";
 import Landing from "./landing";
-import Websites from "./websites";
-import Webshops from "./webshops";
+import Technologies from "./technologies";
+import Certificates from "./certificates";
 import Projects from "./projects";
 import Contact from "./contact";
 import Legal from "./legal";
@@ -31,7 +31,6 @@ export default function Main() {
             const cookiesPresetsObject = JSON.parse(cookiesPresets);
 
             cookiesPresetsObject.types.forEach((each) => {
-                console.log(each);
                 if (each.type === "analitycs" && each.allow) {
                     ReactGA.initialize("UA-132849357-2");
                     ReactGA.pageview(
@@ -61,8 +60,16 @@ export default function Main() {
                 <Header />
                 <Switch>
                     <Route path="/" exact={true} component={Landing} />
-                    <Route path="/websites" exact={true} component={Websites} />
-                    <Route path="/webshops" exact={true} component={Webshops} />
+                    <Route
+                        path="/technologies"
+                        exact={true}
+                        component={Technologies}
+                    />
+                    <Route
+                        path="/certificates"
+                        exact={true}
+                        component={Certificates}
+                    />
                     <Route path="/projects" exact={true} component={Projects} />
                     <Route path="/contact" exact={true} component={Contact} />
                     <Route path="/legal" exact={true} component={Legal} />

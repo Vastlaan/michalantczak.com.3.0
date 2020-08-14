@@ -42,7 +42,7 @@ export default function InfoPanel() {
                             id: "landingInfoWebsitesText",
                         })}
                     </p>
-                    <Link to="/websites">
+                    <Link to="/projects">
                         <ButtonPrimary>
                             {intl.formatMessage({
                                 id: "landingInfoWebsitesButton",
@@ -105,8 +105,9 @@ const Main = styled.div`
         color: ${colors.font};
     }
 
-    button {
-        margin: 5rem 0;
+    a {
+        margin: 5rem auto;
+        ${() => respond("s", "margin: 5rem 0;")}
     }
 `;
 const Icons = styled.div`
@@ -114,6 +115,7 @@ const Icons = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 2rem;
 
     a {
         display: flex;
