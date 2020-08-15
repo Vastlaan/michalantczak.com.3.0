@@ -17,8 +17,11 @@ function Packages() {
                     header={intl.formatMessage({
                         id: "landingWelcomeS1Header",
                     })}
+                    btnText={intl.formatMessage({
+                        id: "landingWelcomeCardButton1",
+                    })}
                     delay={0.3}
-                    location="/websites"
+                    location="/projects"
                 >
                     <RiBankLine />
                 </ServiceCard>
@@ -28,8 +31,11 @@ function Packages() {
                     header={intl.formatMessage({
                         id: "landingWelcomeS2Header",
                     })}
+                    btnText={intl.formatMessage({
+                        id: "landingWelcomeCardButton2",
+                    })}
                     delay={0.3}
-                    location="/webshops"
+                    location="/technologies"
                 >
                     <RiHandbagLine />
                 </ServiceCard>
@@ -39,8 +45,11 @@ function Packages() {
                     header={intl.formatMessage({
                         id: "landingWelcomeS3Header",
                     })}
+                    btnText={intl.formatMessage({
+                        id: "landingWelcomeCardButton3",
+                    })}
                     delay={0.6}
-                    location="/websites"
+                    location="/contact"
                 >
                     <RiHandHeartLine />
                 </ServiceCard>

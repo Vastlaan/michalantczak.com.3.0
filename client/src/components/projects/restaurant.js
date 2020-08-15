@@ -218,7 +218,7 @@ const Description = styled.div`
     p {
         font-family: ${fonts.cormorant};
         color: ${colors.font};
-        font-size: 1.8rem;
+        font-size: 2rem;
         text-align: center;
         ${() => respond("m", `text-align: left;`)}
     }
@@ -230,12 +230,12 @@ const Description = styled.div`
         a {
             font-size: 2rem;
             background-color: ${colors.secondaryDark};
-            padding: 1rem 3rem;
+            padding: 1rem 2rem;
             color: white;
             text-decoration: none;
             cursor: pointer;
             transition: all 0.3s;
-
+            ${() => respond("m", `padding: 1rem 3rem;`)}
             &:hover {
                 background-color: ${colors.secondary};
             }

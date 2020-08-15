@@ -10,6 +10,7 @@ export default function ServiceCard({
     color,
     header,
     text,
+    btnText,
     children,
     delay,
     location,
@@ -40,9 +41,7 @@ export default function ServiceCard({
             <Icon color={color}>{children}</Icon>
             <Text>{text}</Text>
             <Link to={location}>
-                <ButtonPrimary color={color}>
-                    {intl.formatMessage({ id: "landingWelcomeCardButton" })}
-                </ButtonPrimary>
+                <ButtonPrimary color={color}>{btnText}</ButtonPrimary>
             </Link>
         </Container>
     );

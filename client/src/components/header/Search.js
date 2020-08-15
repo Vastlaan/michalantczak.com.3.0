@@ -30,31 +30,20 @@ export default function Search() {
         console.log(inputValue);
         const keywordsArray = [
             {
-                key: "services",
+                key: "technologies websites technologieen tech stack",
                 title: "What can I do for you?",
-                link: "/websites",
-            },
-            { key: "projects", title: "Projects Gallery", link: "/projects" },
-            {
-                key: "website",
-                title: "What can I do for you?",
-                link: "/websites",
+                link: "/technologies",
             },
             {
-                key: "examples",
+                key: "examples projects gallery projekten",
                 title: "Examples of websites",
                 link: "/projects",
             },
             {
-                key: "projekten",
-                title: "Check my projects",
-                link: "/projects",
+                key: "contact phone mail address adres",
+                title: "Contact Me!",
+                link: "/contact",
             },
-            { key: "contact", title: "Contact Me!", link: "/contact" },
-            { key: "phone", title: "Contact Me!", link: "/contact" },
-            { key: "mail", title: "Contact Me!", link: "/contact" },
-            { key: "address", title: "Contact Me!", link: "/contact" },
-            { key: "adres", title: "Contact Me!", link: "/contact" },
         ];
         let inner = "<ul>";
         keywordsArray.forEach((keyword) => {

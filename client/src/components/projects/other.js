@@ -80,7 +80,7 @@ const Main = styled.div`
           margin: 2rem auto;
           text-align: center;
           font-family: ${fonts.cormorant};
-          font-size: 1.8rem;
+          font-size: 2rem;
           color: ${colors.font};
         }
         a {

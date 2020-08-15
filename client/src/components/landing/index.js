@@ -29,21 +29,8 @@ export default function Landing() {
                     </ButtonPrimary>
                 </Link>
             </Intersection>
-            <Welcome />
             <Introduce />
-            <Intersection
-                sub={intl.formatMessage({ id: "landingIntersection2Sub" })}
-                main={intl.formatMessage({ id: "landingIntersection2Main" })}
-                text={intl.formatMessage({ id: "landingIntersection2Text" })}
-            >
-                <Link to="/webshops">
-                    <ButtonPrimaryReverse>
-                        {intl.formatMessage({
-                            id: "landingIntersection2Button",
-                        })}
-                    </ButtonPrimaryReverse>
-                </Link>
-            </Intersection>
+            <Welcome />
         </div>
     );
 }

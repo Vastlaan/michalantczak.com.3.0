@@ -96,9 +96,9 @@ const Main = styled.div`
 
 const Header = styled.h1`
     padding: 1rem;
-    ${() => respond("m", `padding:1rem 5rem; flex: 0 0 100%;`)}
+    ${() => respond("m", `padding:1rem 5rem; flex: 0 0 100%; font-size: 5rem;`)}
 
-    font-size: 5rem;
+    font-size: 4rem;
     color: ${colors.grey};
     letter-spacing: 0.3rem;
     font-weight: 400;

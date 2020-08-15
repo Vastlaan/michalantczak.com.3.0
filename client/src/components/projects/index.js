@@ -8,6 +8,7 @@ import Barber from "./barber";
 import Claire from "./claire";
 import Resume from "./resume";
 import Other from "./other";
+import Header from "./Header";
 
 export default function Projects() {
     const intl = useIntl();
@@ -26,8 +27,8 @@ export default function Projects() {
                     </Link>
                 </p>
             </Nav>
+            <Header intl={intl} />
             <Main>
-                <Header>Projects Gallery</Header>
                 <Restaurant intl={intl} />
                 <Barber intl={intl} />
                 <Claire intl={intl} />
@@ -39,7 +40,7 @@ export default function Projects() {
 }
 
 const Container = styled.section`
-    margin: 10rem 2rem;
+    margin: 10rem 0;
 `;
 const Main = styled.div`
     padding: 2rem;
@@ -47,7 +48,7 @@ const Main = styled.div`
         respond("m", "padding: 1rem;");
     }}
 `;
-const Header = styled.h1`
+const Header2 = styled.h1`
     font-size: 4rem;
     font-weight: 300;
     text-align: center;
