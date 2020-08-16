@@ -3,7 +3,7 @@ import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { fonts, respond, colors } from "../../styles";
-import { RiShoppingBagLine } from "react-icons/ri";
+import { RiAwardLine } from "react-icons/ri";
 
 export default function Circl({ intl }) {
     const circle = useRef();
@@ -30,7 +30,7 @@ export default function Circl({ intl }) {
     return (
         <Circle ref={circle}>
             <Icon>
-                <RiShoppingBagLine />
+                <RiAwardLine />
             </Icon>
             <Text>{intl.formatMessage({ id: "webshopCircleText" })}</Text>
         </Circle>
@@ -59,8 +59,8 @@ const Icon = styled.div`
     align-items: center;
 
     svg {
-        width: 5rem;
-        height: 5rem;
+        width: 10rem;
+        height: 10rem;
         fill: ${colors.secondary};
     }
 `;

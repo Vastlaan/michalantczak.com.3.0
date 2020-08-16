@@ -83,11 +83,12 @@
     "websitesPackagesAdvanced8": "Reserveering/afspraak system",
     "websitesPackagesAdvanced9": "Social Media Activiteit",
     "websitesPackagesAdvanced10": "Support Pro",
+    "technologiesIntersectionSub": "Cloud solutions are improving accessability and performance of modern API's",
+    "technologiesIntersectionMain": "Servers & Cloud Computing",
+    "technologiesIntersectionText": "I have experience with both AWS EC2 instances and DigitalOcean droplets. Based on Linux OS I can bring to live many kinds of API's, websites and databases.",
 
     "webshopsNavHome": "Voorpagina",
     "webshopsNavCurrent": "Certificaten",
-    "webshopsHeaderMain": "Galerij - overzicht van Projecten",
-    "webshopsHeaderText": "Binnen enkele weken kunt u uw webshop starten. Bij mij beheert u veilig items in uw winkel, biedt u IDeal-kassasysteem aan, verzendt u geautomatiseerde facturen of stuurt u abonnees-e-mails met offertes. En dat alles verpakt in modern design.",
     "webshopIntersection1Sub": "Webshop met IT Context",
     "webshopIntersection1Main": "Veilig & modern",
     "webshopIntersection1Text": "Ik geef om de beveiliging en gebruikerservaring van klanten.",
@@ -135,6 +136,8 @@
     "footerLinksCookies": "Cookies",
     "footerDisclaimer": "MIchal Antczak. Alle rechten voorbehouden.",
 
+    "projectsHeaderMain": "Galerij - overzicht van Projecten",
+    "projectsHeaderText": "Al mijn websites zijn responsive. Elke schermdiameter heeft zijn passende  lay-out en inhoudelijke structuur, zodat de website goed wordt weergegeven op verschillende apparaten.",
     "projectsNavigationCurrent": "Projects",
     "projectsCasaHeader": "La Casa Restaurant",
     "projectsCasaStrong": "La Casa Restaurant",

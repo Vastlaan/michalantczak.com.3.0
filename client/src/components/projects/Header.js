@@ -6,8 +6,8 @@ export default function Head({ intl }) {
     return (
         <Header>
             <Text>
-                <h1>{intl.formatMessage({ id: "webshopsHeaderMain" })}</h1>
-                <p>{intl.formatMessage({ id: "webshopsHeaderText" })}</p>
+                <h1>{intl.formatMessage({ id: "projectsHeaderMain" })}</h1>
+                <p>{intl.formatMessage({ id: "projectsHeaderText" })}</p>
             </Text>
             <Video>
                 <video id="background-video" loop autoPlay>

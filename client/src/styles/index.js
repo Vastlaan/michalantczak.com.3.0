@@ -49,6 +49,37 @@ export const respond = (type, content) => {
 
 //=====================================Components=======================================
 
+export const Content = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-family: ${fonts.orbitron};
+        font-size: 2.8rem;
+        letter-spacing: 0.2rem;
+        color: ${colors.primary};
+    }
+
+    svg {
+        font-size: 6rem;
+        margin: 2rem auto;
+        color: inherit;
+    }
+
+    p {
+        font-family: ${fonts.cormorant};
+        font-size: 2.2rem;
+        text-align: center;
+        color: ${colors.font};
+
+        a {
+            text-decoration: none;
+        }
+    }
+`;
+
 export const ButtonPrimary = styled.button`
     border: 1px solid transparent;
     border-radius: 3px;

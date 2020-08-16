@@ -3,7 +3,7 @@ import { useIntl } from "react-intl";
 import { respond, colors } from "../../../styles";
 import styled from "styled-components";
 import ServiceCard from "../../ServiceCard";
-import { RiBankLine, RiHandHeartLine, RiHandbagLine } from "react-icons/ri";
+import { RiBankLine, RiHandHeartLine, RiToolsLine } from "react-icons/ri";
 
 function Packages() {
     const intl = useIntl();
@@ -37,7 +37,7 @@ function Packages() {
                     delay={0.3}
                     location="/technologies"
                 >
-                    <RiHandbagLine />
+                    <RiToolsLine />
                 </ServiceCard>
                 <ServiceCard
                     color={colors.secondary}
