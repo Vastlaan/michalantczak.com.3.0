@@ -29,11 +29,7 @@ export default function Jss({ intl }) {
             <Content ref={content}>
                 <h3>JavaScript</h3>
                 <DiJavascript1 />
-                <p>
-                    I'm quite fluent in JavaScript using moder EcmaScript (at
-                    least 2016) syntax among others: rest/spread properities and
-                    asynchronous iteration.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesJs" })}</p>
             </Content>
         </JavaScript>
     );

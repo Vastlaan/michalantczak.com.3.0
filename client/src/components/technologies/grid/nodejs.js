@@ -29,11 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>NodeJs</h3>
                 <DiNodejs />
-                <p>
-                    I make use of NodeJs with Express to build functional
-                    RESTful APIs. I can design and create almost every desired
-                    backend functionality.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesNode" })}</p>
             </Content>
         </NodeJs>
     );

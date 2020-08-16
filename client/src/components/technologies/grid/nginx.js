@@ -29,11 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>NginX</h3>
                 <DiNginx />
-                <p>
-                    Most of the time I use NginX as a reverse proxy server, but
-                    can also use it as a backend server to handle incoming
-                    requests.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesNginx" })}</p>
             </Content>
         </Nginx>
     );

@@ -28,12 +28,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>React</h3>
                 <DiReact />
-                <p>
-                    This modern framework is my favorite tool. I feel
-                    comfortable with both functional and class based components,
-                    React Redux, React Router, build on React GatsbyJs and
-                    Hooks.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesReact" })}</p>
             </Content>
         </Reactt>
     );

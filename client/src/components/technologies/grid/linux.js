@@ -29,11 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>Linux OS</h3>
                 <DiLinux />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas, quia aliquam, ad atque nam eius porro similique
-                    praesentium, beatae accusamus dolores illum.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesLinux" })}</p>
             </Content>
         </Linux>
     );

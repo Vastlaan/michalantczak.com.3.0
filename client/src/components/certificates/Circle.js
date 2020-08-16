@@ -3,7 +3,7 @@ import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { fonts, respond, colors } from "../../styles";
-import { RiAwardLine } from "react-icons/ri";
+import { FaAward } from "react-icons/fa";
 
 export default function Circl({ intl }) {
     const circle = useRef();
@@ -29,8 +29,9 @@ export default function Circl({ intl }) {
     }, []);
     return (
         <Circle ref={circle}>
+            <Header>{intl.formatMessage({ id: "certificatesHeader" })}</Header>
             <Icon>
-                <RiAwardLine />
+                <FaAward />
             </Icon>
             <Text>{intl.formatMessage({ id: "webshopCircleText" })}</Text>
         </Circle>
@@ -47,10 +48,19 @@ const Circle = styled.div`
     ${() => respond("l", "align-items: center;")};
 `;
 
+const Header = styled.h1`
+    width: 100%;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: ${fonts.orbitron};
+    color: ${colors.tertiary};
+    text-align: center;
+`;
+
 const Icon = styled.div`
-    margin: 5rem auto;
-    width: 15rem;
-    height: 15rem;
+    margin: 1rem auto;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     border: 3px solid ${colors.secondary};
     // box-shadow: 0 0 2rem ${colors.secondary};
@@ -59,8 +69,8 @@ const Icon = styled.div`
     align-items: center;
 
     svg {
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
         fill: ${colors.secondary};
     }
 `;

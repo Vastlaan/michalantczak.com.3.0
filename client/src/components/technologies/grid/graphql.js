@@ -29,11 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>GraphQL</h3>
                 <GrGraphQl />
-                <p>
-                    I've recently started my journey with this query language
-                    and I felt in love with it! I have no problem with using
-                    that tool, which I usually have contact with via GatsbyJs.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesGraphql" })}</p>
             </Content>
         </GraphQL>
     );

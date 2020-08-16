@@ -28,10 +28,7 @@ export default function Htmll({ intl }) {
             <Content ref={content}>
                 <h3>HTML5</h3>
                 <DiHtml5 />
-                <p>
-                    I write cross-browser reusable code with new semantics
-                    including canvas, multimedia tags and much more.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesHtml" })}</p>
             </Content>
         </Html>
     );

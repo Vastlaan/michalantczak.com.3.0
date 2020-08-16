@@ -29,11 +29,7 @@ export default function Sasss({ intl }) {
             <Content ref={content}>
                 <h3>Sass</h3>
                 <DiSass />
-                <p>
-                    This CSS preprocessor comes with powerfull functionality. I
-                    know how to use functions, mixins, interpolations, @content
-                    and @import directives, reference symbol '&' and much more.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesSass" })}</p>
             </Content>
         </Sass>
     );

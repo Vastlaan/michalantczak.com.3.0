@@ -29,8 +29,7 @@ export default function Reeacttt({ intl }) {
                 <h3>MongoDB</h3>
                 <DiMongodb />
                 <p>
-                    Based on MongoDB relational database I've built my most
-                    complex web application for chefs:{" "}
+                    {intl.formatMessage({ id: "technologiesMongo" })}{" "}
                     <a href="https://chefsbook.org">Chefsbook.org</a>
                 </p>
             </Content>

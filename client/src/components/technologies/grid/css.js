@@ -29,12 +29,7 @@ export default function Htmll({ intl }) {
             <Content ref={content}>
                 <h3>CSS3</h3>
                 <DiCss3 />
-                <p>
-                    I'm very flexible in CSS making layouts with use of flexbox,
-                    grid wrapped in fancy animations and transitions. I write
-                    the code with BEM notiation or styled-components as well as
-                    CSS modules and CSS in JavaScript.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesCss" })}</p>
             </Content>
         </Css>
     );

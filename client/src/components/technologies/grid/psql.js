@@ -29,11 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>PostgreSQL</h3>
                 <DiPostgresql />
-                <p>
-                    I'm most fluent in good old open source PostgreSQL. Tables
-                    creations, insertions, updates, altering, transactions and
-                    much more SQL syntax is familiar to me.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesPsql" })}</p>
             </Content>
         </Psql>
     );

@@ -29,13 +29,7 @@ export default function Reeacttt({ intl }) {
             <Content ref={content}>
                 <h3>Github</h3>
                 <DiGithubBadge />
-                <p>
-                    Not forgeting about most popular version control GitHub. I
-                    practiced a lot of adding, commiting, pushing, forking
-                    cloning, branching, merging, rebasing, making pull requests,
-                    reseting head (soft or hard), stashing and its other
-                    functionality.
-                </p>
+                <p>{intl.formatMessage({ id: "technologiesGithub" })}</p>
             </Content>
         </GitHub>
     );
