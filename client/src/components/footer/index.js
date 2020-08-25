@@ -190,6 +190,7 @@ const Copy = styled.div`
     justify-content: center;
 
     p {
+        text-align: center;
         font-size: 2rem;
         color: ${colors.grey};
     }
