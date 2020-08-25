@@ -44,7 +44,7 @@ export default function Introduce() {
 
 const Section = styled.article`
     margin: 10rem 0;
-    padding: 31% 2rem;
+    padding: 45% 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

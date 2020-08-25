@@ -98,6 +98,8 @@ const Main = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 2rem;
+    ${() => respond("s", "padding: 0;")}
 
     p {
         font-family: ${fonts.rokkitt};

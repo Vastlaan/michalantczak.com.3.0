@@ -86,6 +86,8 @@ const Slogan = styled.h1`
     font-size: 4rem;
     font-weight: 600;
     color: ${colors.primary};
+    padding: 2rem;
+    ${() => respond("s", "padding: 0;")}
 `;
 
 const Social = styled.div`
