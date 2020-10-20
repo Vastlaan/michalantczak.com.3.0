@@ -97,7 +97,7 @@ const GlobalStyles = createGlobalStyle`
         ${(props) => respond("s", `font-size:50%;`)}
         ${(props) => respond("m", `font-size:55%;`)}
         ${(props) => respond("l", `font-size:62.5%;`)}
-        ${(props) => respond("xxl", `font-size:100%;`)}
+        ${(props) => respond("xxl", `font-size:65%;`)}
     }
     @keyframes dash {
   from {
