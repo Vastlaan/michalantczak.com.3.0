@@ -38,6 +38,14 @@ const Header = styled.article`
         rgba(11, 79, 108, 0.3)
     );
     overflow: hidden;
+    ${() =>
+        respond(
+            "xl",
+            `width: 100vw; 
+            transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
+            padding: 5rem calc((100vw  - 1440px) / 2);
+            `
+        )}
 `;
 
 const Text = styled.div`

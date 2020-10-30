@@ -52,23 +52,21 @@ export default function Add() {
 }
 
 const Ad = styled.div`
-    ${() => respond("l", "width: 30vw; padding:10rem 2rem;")};
+    ${() => respond("l", "min-width: 30vw; padding:10rem 2rem;")};
     grid-area: ad;
     background-image: linear-gradient(
             to right,
-            rgba(11,79,108,.6),
-            rgba(11,79,108,.6)
+            rgba(11, 79, 108, 0.6),
+            rgba(11, 79, 108, 0.6)
         ),
         url("${B}");
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    
-    
 `;
 const Title = styled.h2`
     color: ${colors.bg};

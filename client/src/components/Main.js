@@ -18,6 +18,7 @@ import Error from "./Error";
 import ScrollToTop from "./ScrollToTop";
 import { respond, colors, fonts } from "../styles";
 import Cookies from "./Cookies";
+import Layout from "./Layout";
 
 export default function Main() {
     const intl = useIntl();
@@ -58,23 +59,33 @@ export default function Main() {
             <Router>
                 <ScrollToTop />
                 <Header />
-                <Switch>
-                    <Route path="/" exact={true} component={Landing} />
-                    <Route
-                        path="/technologies"
-                        exact={true}
-                        component={Technologies}
-                    />
-                    <Route
-                        path="/certificates"
-                        exact={true}
-                        component={Certificates}
-                    />
-                    <Route path="/projects" exact={true} component={Projects} />
-                    <Route path="/contact" exact={true} component={Contact} />
-                    <Route path="/legal" exact={true} component={Legal} />
-                    <Route component={Error} />
-                </Switch>
+                <Layout>
+                    <Switch>
+                        <Route path="/" exact={true} component={Landing} />
+                        <Route
+                            path="/technologies"
+                            exact={true}
+                            component={Technologies}
+                        />
+                        <Route
+                            path="/certificates"
+                            exact={true}
+                            component={Certificates}
+                        />
+                        <Route
+                            path="/projects"
+                            exact={true}
+                            component={Projects}
+                        />
+                        <Route
+                            path="/contact"
+                            exact={true}
+                            component={Contact}
+                        />
+                        <Route path="/legal" exact={true} component={Legal} />
+                        <Route component={Error} />
+                    </Switch>
+                </Layout>
                 <Footer />
                 {store.cookies.display ? <Cookies /> : null}
             </Router>

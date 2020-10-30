@@ -105,6 +105,7 @@ const Main = styled.div`
         font-family: ${fonts.rokkitt};
         font-size: 2rem;
         color: ${colors.font};
+        max-width: 60rem;
     }
 
     a {
@@ -116,7 +117,7 @@ const Icons = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 2rem;
 
     a {

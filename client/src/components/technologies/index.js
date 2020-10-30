@@ -12,6 +12,10 @@ export default function Main() {
 
     return (
         <Container>
+            <Slogan
+                text1={intl.formatMessage({ id: "websitesSlogan1" })}
+                text2={intl.formatMessage({ id: "websitesSlogan2" })}
+            />
             <Nav>
                 <p>
                     <Link to="/">
@@ -23,11 +27,6 @@ export default function Main() {
                     </Link>
                 </p>
             </Nav>
-
-            <Slogan
-                text1={intl.formatMessage({ id: "websitesSlogan1" })}
-                text2={intl.formatMessage({ id: "websitesSlogan2" })}
-            />
 
             <Grid />
 

@@ -61,12 +61,21 @@ const Section = styled.article`
             "l",
             "padding: 20% 5rem; clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);"
         )}
+    ${() =>
+        respond(
+            "xl",
+            `width: 100vw; 
+            transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
+            padding: 30rem calc((100vw - 1366px) / 2);
+            `
+        )}
 `;
 const HeaderUp = styled.h3`
     font-size: 3rem;
     color: ${colors.grey};
     font-weight: 500;
     text-align: center;
+    max-width: 60rem;
 `;
 const Image = styled.div`
     margin: 2rem auto;
@@ -85,4 +94,5 @@ const Text = styled.p`
     text-align: center;
     font-size: 2rem;
     font-family: ${fonts.rokkitt};
+    max-width: 60rem;
 `;

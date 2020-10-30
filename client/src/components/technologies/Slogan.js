@@ -28,10 +28,18 @@ const Slogan = styled.div`
     );
 
     ${() => respond("l", "flex-direction: row; justify-content: space-around;")}
+    ${() =>
+        respond(
+            "xl",
+            `width: 100vw; 
+            transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
+            padding: 5rem calc((100vw  - 1440px) / 2);
+            `
+        )}
 
     h1 {
         flex: 0 0 70%;
-        margin: 0 auto;
+        //margin: 0 auto;
         font-size: 3.5rem;
         font-weight: 400;
         text-transform: uppercase;

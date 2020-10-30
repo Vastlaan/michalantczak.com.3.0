@@ -35,6 +35,7 @@ export default function Header() {
 const Banner = styled.section`
     min-height: calc(100vh);
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "nothing nothing nothing"
         "header header header"
@@ -74,6 +75,14 @@ const Banner = styled.section`
         "container container ad"
         "icons icons ad";
     grid-gap: 2rem;`
+        )}
+
+    ${() =>
+        respond(
+            "xl",
+            `width: 100vw; 
+            transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
+            `
         )}
 `;
 const Space = styled.div`

@@ -40,6 +40,10 @@ export const respond = (type, content) => {
         return `@media only screen and (min-width: 1050px){
     ${content}
   }`;
+    } else if (type === "xl") {
+        return `@media only screen and (min-width: 1367px){
+    ${content}
+  }`;
     } else if (type === "xxl") {
         return `@media only screen and (min-width: 1662px){
     ${content}
