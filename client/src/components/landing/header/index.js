@@ -82,6 +82,7 @@ const Banner = styled.section`
             "xl",
             `width: 100vw; 
             transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
+            min-height: 75vh;
             `
         )}
 `;

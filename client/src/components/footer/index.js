@@ -32,28 +32,32 @@ export default function Footer() {
                         info@michalantczak.com
                     </a>
                 </Company>
-                <Links>
-                    <Link to="/projects">
-                        {intl.formatMessage({ id: "footerLinksProjects" })}
-                    </Link>
-                    <Link to="/certificates">
-                        {intl.formatMessage({ id: "footerLinksCertificates" })}
-                    </Link>
-                    <Link to="/technologies">
-                        {intl.formatMessage({ id: "footerLinksMarketing" })}
-                    </Link>
-                </Links>
-                <Links>
-                    <Link to="/contact">
-                        {intl.formatMessage({ id: "footerLinksContact" })}
-                    </Link>
-                    <Link to="/legal">
-                        {intl.formatMessage({ id: "footerLinksPrivacy" })}
-                    </Link>
-                    <Link to="/legal">
-                        {intl.formatMessage({ id: "footerLinksCookies" })}
-                    </Link>
-                </Links>
+                <LinksBox>
+                    <Links>
+                        <Link to="/projects">
+                            {intl.formatMessage({ id: "footerLinksProjects" })}
+                        </Link>
+                        <Link to="/certificates">
+                            {intl.formatMessage({
+                                id: "footerLinksCertificates",
+                            })}
+                        </Link>
+                        <Link to="/technologies">
+                            {intl.formatMessage({ id: "footerLinksMarketing" })}
+                        </Link>
+                    </Links>
+                    <Links>
+                        <Link to="/contact">
+                            {intl.formatMessage({ id: "footerLinksContact" })}
+                        </Link>
+                        <Link to="/legal">
+                            {intl.formatMessage({ id: "footerLinksPrivacy" })}
+                        </Link>
+                        <Link to="/legal">
+                            {intl.formatMessage({ id: "footerLinksCookies" })}
+                        </Link>
+                    </Links>
+                </LinksBox>
             </Main>
             <Social>
                 <a href="https://www.linkedin.com/in/michal-antczak/">
@@ -130,6 +134,16 @@ const Company = styled.div`
     }
 `;
 
+const LinksBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ${() =>
+        respond(
+            "m",
+            `flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;`
+        )}
+`;
 const Links = styled.ul`
     width: 100%;
     flex: 1;
@@ -143,7 +157,8 @@ const Links = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    ${() => respond("m", `align-items: strech;`)}
+
+    ${() => respond("m", `align-items: flex-end;`)}
 
     a {
         text-decoration: none;

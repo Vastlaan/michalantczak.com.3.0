@@ -66,7 +66,7 @@ const Section = styled.article`
             "xl",
             `width: 100vw; 
             transform: translateX(calc( (100vw + 18px - 1366px) / 2 * -1));
-            padding: 30rem calc((100vw - 1366px) / 2);
+            padding: 20rem calc((100vw - 1366px) / 2);
             `
         )}
 `;
